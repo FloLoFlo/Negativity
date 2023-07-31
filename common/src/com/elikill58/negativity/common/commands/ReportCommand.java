@@ -59,7 +59,7 @@ public class ReportCommand implements CommandListeners, TabListeners {
 		}
 
 		if (arg.length == 1) {
-			InventoryManager.open(NegativityInventory.REPORT, p, target);
+			InventoryManager.open(NegativityInventory.REPORT, target, p);
 			return false;
 		}
 
