@@ -16,12 +16,10 @@ public class NegativityTpCommand implements Listeners {
 	@EventListener
 	public void onCommandPreProcess(PlayerCommandPreProcessEvent e) {
 		Player p = e.getPlayer();
-		if(!e.getCommand().equalsIgnoreCase("negativitytp"))
-			return; // not my command -> ignore
-		
-		if (!Perm.hasPerm(p, Perm.SHOW_ALERT)) { // don't have perm to run this command
-			return;
+		if (!e.getCommand().equalsIgnoreCase("negativitytp") || !Perm.hasPerm(p, Perm.SHOW_ALERT)) {
+			return; // not the /negativitytp command or don't have permission -> ignore
 		}
+
 		e.setCancelled(true); // our command
 		String[] arg = e.getArgument();
 		if(arg.length == 0) {
