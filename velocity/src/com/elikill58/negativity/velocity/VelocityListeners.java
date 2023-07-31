@@ -96,7 +96,7 @@ public class VelocityListeners {
 		String message = e.getCommand().substring(1);
 		String cmd = message.split(" ")[0];
 		String[] arg = message.replace(cmd + " ", "").split(" ");
-		String prefix = message.split(" ").length > 1 ? message.split(" ")[1].toLowerCase(Locale.ROOT) : "";;
+		String prefix = message.split(" ").length > 1 ? message.split(" ")[1].toLowerCase(Locale.ROOT) : "";
 		NegativityPlayer np = NegativityPlayer.getNegativityPlayer(p.getUniqueId(), () -> new VelocityPlayer(p));
 		PlayerCommandPreProcessEvent event = new PlayerCommandPreProcessEvent(np.getPlayer(), cmd, arg, prefix, true);
 		EventManager.callEvent(event);
