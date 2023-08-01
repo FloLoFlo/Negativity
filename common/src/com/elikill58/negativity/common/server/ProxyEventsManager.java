@@ -59,7 +59,7 @@ public class ProxyEventsManager implements Listeners {
 					}
 					hover += "\n\n";
 					hover += Messages.getMessage(mod, "alert_tp_info", "%playername%", playername);
-					ada.sendMessageRunnableHover(mod, msg, hover, "/negativitytp " + p.getName());
+					ada.sendMessageRunnableHover(mod, msg, hover, "/negativitytp " + cible.getName());
 				}
 			}
 		} else if (message instanceof ReportMessage) {
@@ -71,7 +71,7 @@ public class ProxyEventsManager implements Listeners {
 				if (Perm.hasPerm(mod, Perm.SHOW_REPORT)) {
 					hasPermitted = true;
 					ada.sendMessageRunnableHover(mod, Messages.getMessage(mod, "report", place),
-							Messages.getMessage(mod, "report_hover", "%playername%", report.getReported()), "/negativitytp " + p.getName());
+							Messages.getMessage(mod, "report_hover", "%playername%", report.getReported()), "/negativitytp " + report.getReported());
 				}
 			}
 			if (!hasPermitted)
