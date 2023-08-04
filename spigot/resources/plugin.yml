@@ -18,12 +18,15 @@ commands:
   nban:
     description: Ban a player
     permission: negativity.ban
+    aliases: [ban, saltyacban, sacban]
   nunban:
     description: Unban a player
     permission: negativity.unban
+    aliases: [unban, saltyacunban, sacunban]
   nkick:
     description: Kick a player
     permission: negativity.kick
+    aliases: [kick, saltyackick, sackick]
   nmod:
     description: Option for mod
     permission: negativity.mod
@@ -43,7 +46,7 @@ commands:
   nwarn:
     description: Warn a player
     permission: negativity.warn
-    aliases: [warn]
+    aliases: [warn, saltyacwarn, sacwarn]
 
 permissions:
   negativity.*:
