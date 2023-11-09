@@ -89,10 +89,10 @@ alt:
   # Here, it's for the second account
   2:
     action: alert
-    message: "&a[&2Negativity&a]&c &cWarn: you are already ban on another account."
+    message: "&a[&2SaltyAC&a]&c &cWarn: you are already ban on another account."
   3:
     action: alert_mod
-    message: "&a[&2Negativity&a]&c &cWarn: %name% just logged but he has already 2 banned account on same IP."
+    message: "&a[&2SaltyAC&a]&c &cWarn: %name% just logged but he has already 2 banned account on same IP."
   4:
     action: ban
     message: "Alt unauthorized"
