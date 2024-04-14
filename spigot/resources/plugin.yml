@@ -58,7 +58,6 @@ permissions:
       negativity.ban: true
       negativity.unban: true
       negativity.kick: true
-      negativity.mod: true
       negativity.verif: true
       negativity.alert: true
       negativity.mod: true
