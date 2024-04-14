@@ -467,6 +467,7 @@ public class NegativityCommand implements CommandListeners, TabListeners {
 		}
 
 		OfflinePlayer targetPlayer = Adapter.getAdapter().getOfflinePlayer(arg[0]);
+		sender.sendMessage(Adapter.getAdapter().getName()+ "+" + Adapter.getAdapter().getPluginVersion());
 		if (targetPlayer != null) {
 			if (!(sender instanceof Player)) {
 				Messages.sendMessage(sender, "only_player");
